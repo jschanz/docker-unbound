@@ -11,4 +11,5 @@ services:
     #  - "53:53/udp"
     volumes:
       - ./config:/opt/unbound/etc/unbound/
+      - ./log:/var/log/unbound/
     restart: unless-stopped
